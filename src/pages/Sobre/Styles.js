@@ -7,40 +7,31 @@ export const Section = styled.section`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-block: 40px;
+  padding-block: 30px;
 `;
 
 export const DivBio = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
-  margin-bottom: 1.5rem;
-
-  @media (min-width: 201px) and (max-width: 700px) {
-    flex-direction: column;
-    padding-inline: 20px;
-    gap: 1rem;
-  }
+  gap: 2rem;
+  margin-bottom: 1rem;
 `;
 
 export const ImgFoto = styled.img`
-  /* border: solid pink; */
   border-radius: 50%;
-  height: 42vh;
-  width: 19vw;
-
-  @media (min-width: 201px) and (max-width: 700px) {
-    width: 30vw;
-    height: 20vh;
-  }
+  height: 40vh;
+  width: 18vw;
 `;
 
 export const DivText = styled.div`
-  /* border: solid red; */
   height: 47vh;
   width: 40%;
   text-align: left;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
   h2,
   p {
     margin-bottom: 0.7rem;
@@ -60,24 +51,18 @@ export const DivText = styled.div`
     color: #16213e;
     font-weight: bold;
   }
-
-  @media (min-width: 201px) and (max-width: 700px) {
-    height: 60vh;
-    width: 50%;
-    h2,
-    p {
-      margin-bottom: 0.7rem;
-    }
-  }
 `;
 
 export const DivTechs = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 1.5rem;
   flex-direction: column;
   color: #16213e;
+
+  h3 {
+    margin-bottom: 1rem;
+  }
 `;
 
 export const DivIcons = styled.div`
@@ -86,13 +71,6 @@ export const DivIcons = styled.div`
   justify-content: space-around;
 
   img {
-    width: 50px;
-  }
-
-  @media (min-width: 201px) and (max-width: 700px) {
-    gap: 0.5rem;
-  }
-  img {
-    height: 40px;
+    width: 40px;
   }
 `;

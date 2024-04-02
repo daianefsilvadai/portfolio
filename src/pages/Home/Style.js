@@ -11,30 +11,12 @@ export const Section = styled.section`
 
   //Responsividade mobile
 
-  @media (min-width: 201px) and (max-width: 700px) {
-    flex-direction: column;
-
-    p {
-      font-size: 1.5rem;
-    }
-  }
-
   //Responsividade web
-  @media (min-width: 701px) {
-  }
 `;
 
 export const ImgDev = styled.img`
-  height: 350px;
-
+  height: 300px;
   margin-top: 1rem;
-  /* border: solid yellow; */
-
-  @media (min-width: 201px) and (max-width: 700px) {
-    max-width: 100%;
-    height: auto;
-    padding-inline: 2rem;
-  }
 `;
 
 export const P = styled.p`

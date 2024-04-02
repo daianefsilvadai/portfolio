@@ -10,14 +10,6 @@ export default function Contatos() {
       <p>Para que possamos conversar mais sobre.</p>
       <S.DivIcon>
         <a
-          href="daianefsilvadai@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <IoMdMail />
-        </a>
-
-        <a
           href="https://github.com/daianefsilvadai"
           target="_blank"
           rel="noopener noreferrer"
@@ -31,6 +23,14 @@ export default function Contatos() {
           rel="noopener noreferrer"
         >
           <FaLinkedin />
+        </a>
+
+        <a
+          href="daianefsilvadai@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <IoMdMail />
         </a>
       </S.DivIcon>
     </S.Section>

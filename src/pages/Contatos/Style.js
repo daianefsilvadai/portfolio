@@ -7,15 +7,10 @@ export const Section = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1.3rem;
 
   h2 {
     color: #16213e;
-  }
-
-  @media (min-width: 201px) and (max-width: 700px) {
-    padding-inline: 20px;
-    text-align: center;
   }
 `;
 
@@ -25,7 +20,7 @@ export const DivIcon = styled.div`
   align-items: center;
   justify-content: space-evenly;
   font-size: 3rem;
-  padding-block: 1.5rem;
+  margin-top: 2rem;
 
   a {
     color: #a511c0;

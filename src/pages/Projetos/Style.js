@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  padding-block: 2.5rem;
+  padding-block: 3rem;
 
   h2 {
     text-align: center;

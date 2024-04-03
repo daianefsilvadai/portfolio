@@ -15,6 +15,8 @@ export const SectionCard = styled.section`
 
   h3 {
     color: #0f3460;
+    text-transform: uppercase;
+    font-size: 1rem;
   }
 
   p {

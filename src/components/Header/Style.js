@@ -13,13 +13,11 @@ export const Header = styled.header`
 `;
 
 export const Span = styled.span`
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
 `;
 
 export const Nav = styled.nav`
-  font-family: "Calligraffitti", cursive;
-
   a {
     text-decoration: none;
     color: white;

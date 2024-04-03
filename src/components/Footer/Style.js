@@ -5,12 +5,12 @@ export const Footer = styled.footer`
   height: 40px;
   background-color: #524f81;
   font-size: 1.125rem;
-  font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
   bottom: 0;
   color: white;
-  font-weight: 400;
+  font-weight: 300;
+  font-family: "Roboto Condensed", sans-serif;
 `;

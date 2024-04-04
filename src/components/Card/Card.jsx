@@ -22,12 +22,12 @@ export default function Card({
       <img src={imagem} alt=""></img>
       <p>{language}</p>
       <S.DivCardFooter>
-        <S.DivCardIcones>
+        {/* <S.DivCardIcones>
           <img src={iconHtml} alt="ícone do html" />
           <img src={iconCss} alt="ícone do js" />
           <img src={iconJs} alt="ícone do react" />
           <img src={iconReact} alt="ícone do react" />
-        </S.DivCardIcones>
+        </S.DivCardIcones> */}
         <S.Btn>
           <a href={html_url} target="_blank" rel="nopenner norefferer">
             <BsArrowRight />

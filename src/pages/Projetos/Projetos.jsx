@@ -1,9 +1,13 @@
 import { useEffect, useState } from "react";
 import Card from "../../components/Card/Card";
-import imgCartoon from "../../pages/Projetos/imagens/catoon.png";
-import imgFantastika from "../../pages/Projetos/imagens/fantastika.png";
+import cartoon from "../../pages/Projetos/imagens/catoon.png";
+import fantastika from "../../pages/Projetos/imagens/fantastika.png";
 import curriculo from "../../pages/Projetos/imagens/curriculo.png";
 import contador from "../../pages/Projetos/imagens/contador.png";
+import padaria from "../../pages/Projetos/imagens/padaria.png";
+import patrocinadores from "../../pages/Projetos/imagens/patrocinadores.png";
+import myshop from "../../pages/Projetos/imagens/myshop.png";
+
 import componente from "../../pages/Projetos/imagens/componente.png";
 
 import * as S from "./Style";
@@ -27,17 +31,35 @@ export default function Projetos() {
             "daianefsilvadai",
             "Git_Github_Basico_intermediario",
             "calculadora",
+            "Desafio1-Logica-Vai-na-web",
+            "desafio_t1_vai_na_web",
+            "Primeiro-Projeto-Funcional",
+            "projeto1-serfrontend",
           ].includes(p.name)
       );
+
+      for (let item = 0; item < dadosFiltrados.length; item++) {
+        if (dadosFiltrados[item].languages_url) {
+          const response = await fetch(dadosFiltrados[item].languages_url);
+          const result = await response.json();
+
+          let linguagens = [];
+
+          for (const propriedade in result) {
+            linguagens.push(propriedade);
+          }
+          dadosFiltrados[item].linguagens = linguagens.join(" / ");
+        }
+      }
 
       const dadosAtualizados = dadosFiltrados.map((item) => {
         let imagem;
         switch (item.name.toUpperCase()) {
           case "CARTOON":
-            imagem = imgCartoon;
+            imagem = cartoon;
             break;
           case "DESAFIO-FINAL-FANTASTIKA":
-            imagem = imgFantastika;
+            imagem = fantastika;
             break;
           case "DESAFIO-CURRICULO":
             imagem = curriculo;
@@ -47,6 +69,15 @@ export default function Projetos() {
             break;
           case "DESAFIOCOMPONENTE":
             imagem = componente;
+            break;
+          case "MYSHOP":
+            imagem = myshop;
+            break;
+          case "PADARIA":
+            imagem = padaria;
+            break;
+          case "PATROCINADORES":
+            imagem = patrocinadores;
             break;
           default:
             imagem = null;
@@ -70,7 +101,7 @@ export default function Projetos() {
               key={repo.id}
               name={repo.name}
               imagem={repo.imagem}
-              language={repo.language}
+              language={repo.linguagens}
               html_url={repo.html_url}
             />
           ))}

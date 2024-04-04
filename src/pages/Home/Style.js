@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   width: 100%;
-  min-height: 85vh;
+  min-height: 88vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-
+  background-color: #f5e7f5;
   /* border: solid yellow; */
 
   //Responsividade mobile

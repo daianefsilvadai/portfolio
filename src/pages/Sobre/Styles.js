@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   width: 100%;
-  min-height: 85vh;
+  min-height: 88vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding-block: 30px;
+  background-color: #f5e7f5;
 `;
 
 export const DivBio = styled.div`

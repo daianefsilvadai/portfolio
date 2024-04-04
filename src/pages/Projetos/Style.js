@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   padding-block: 3rem;
+  background-color: #f5e7f5;
 
   h2 {
     text-align: center;

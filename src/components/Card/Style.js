@@ -28,13 +28,7 @@ export const DivCardFooter = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-`;
-
-export const DivCardIcones = styled.div`
-  display: flex;
-  gap: 10px;
-  font-size: 20px;
+  justify-content: end;
 `;
 
 export const Btn = styled.button`
@@ -48,6 +42,7 @@ export const Btn = styled.button`
   justify-content: center;
   align-items: center;
   cursor: pointer;
+
   &:hover {
     background: linear-gradient(#bc80ea, #dfbdfa);
   }

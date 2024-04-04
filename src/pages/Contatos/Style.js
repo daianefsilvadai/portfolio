@@ -13,6 +13,13 @@ export const Section = styled.section`
   h2 {
     color: #16213e;
   }
+  @media (min-width: 320px) and (max-width: 768px) {
+    height: 90vh;
+    padding-top: 20vh;
+    font-size: 1.5rem;
+    padding-inline: 2rem;
+    text-align: center;
+  }
 `;
 
 export const DivIcon = styled.div`
@@ -25,5 +32,9 @@ export const DivIcon = styled.div`
 
   a {
     color: #a511c0;
+  }
+
+  @media (min-width: 320px) and (max-width: 768px) {
+    width: 90%;
   }
 `;

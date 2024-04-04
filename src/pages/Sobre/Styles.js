@@ -9,6 +9,11 @@ export const Section = styled.section`
   flex-direction: column;
   padding-block: 30px;
   background-color: #f5e7f5;
+  //mobile
+  @media (min-width: 320px) and (max-width: 768px) {
+    display: flex;
+    min-height: 90vh;
+  }
 `;
 
 export const DivBio = styled.div`
@@ -17,12 +22,22 @@ export const DivBio = styled.div`
   justify-content: center;
   gap: 2rem;
   margin-bottom: 1rem;
+
+  @media (min-width: 320px) and (max-width: 768px) {
+    display: flex;
+    margin-top: 8rem;
+  }
 `;
 
 export const ImgFoto = styled.img`
   border-radius: 50%;
   height: 40vh;
   width: 18vw;
+
+  @media (min-width: 320px) and (max-width: 768px) {
+    height: 25vh;
+    width: 35vw;
+  }
 `;
 
 export const DivText = styled.div`
@@ -51,6 +66,9 @@ export const DivText = styled.div`
   strong {
     color: #16213e;
     font-weight: bold;
+  }
+
+  @media (min-width: 320px) and (max-width: 768px) {
   }
 `;
 

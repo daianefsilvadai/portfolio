@@ -22,6 +22,12 @@ export const SectionCard = styled.section`
   p {
     color: #555;
   }
+
+  @media (min-width: 320px) and (max-width: 768px) {
+    h3 {
+      font-size: 1.3rem;
+    }
+  }
 `;
 
 export const DivCardFooter = styled.div`

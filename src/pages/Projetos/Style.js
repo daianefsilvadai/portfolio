@@ -8,6 +8,11 @@ export const Section = styled.section`
     text-align: center;
     color: #16213e;
   }
+
+  @media (min-width: 320px) and (max-width: 768px) {
+    padding-top: 12rem;
+    font-size: 1.5rem;
+  }
 `;
 
 export const SectionList = styled.section`

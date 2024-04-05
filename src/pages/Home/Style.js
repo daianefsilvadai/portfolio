@@ -11,7 +11,7 @@ export const Section = styled.section`
   //Responsividade mobile
   @media (min-width: 320px) and (max-width: 768px) {
     flex-direction: column;
-    min-height: 90vh;
+    /* min-height: 90vh; */
   }
 
   //Responsividade web
@@ -42,7 +42,7 @@ export const ImgDev = styled.img`
   @media (min-width: 320px) and (max-width: 768px) {
     max-width: 100%;
     height: auto;
-    padding-inline: 2.5rem;
+    padding-inline: 2.7rem;
   }
 `;
 export const Btn = styled.button`

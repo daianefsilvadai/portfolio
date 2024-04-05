@@ -11,8 +11,7 @@ export const Section = styled.section`
   background-color: #f5e7f5;
   //mobile
   @media (min-width: 320px) and (max-width: 768px) {
-    display: flex;
-    min-height: 90vh;
+    padding-top: 9rem;
   }
 `;
 
@@ -24,8 +23,9 @@ export const DivBio = styled.div`
   margin-bottom: 1rem;
 
   @media (min-width: 320px) and (max-width: 768px) {
-    display: flex;
-    margin-top: 8rem;
+    flex-direction: column;
+    /* padding-inline: 10px; */
+    gap: 0.3rem;
   }
 `;
 
@@ -35,7 +35,7 @@ export const ImgFoto = styled.img`
   width: 18vw;
 
   @media (min-width: 320px) and (max-width: 768px) {
-    height: 25vh;
+    height: 30vh;
     width: 35vw;
   }
 `;
@@ -69,6 +69,9 @@ export const DivText = styled.div`
   }
 
   @media (min-width: 320px) and (max-width: 768px) {
+    p {
+      font-size: 1.3rem;
+    }
   }
 `;
 

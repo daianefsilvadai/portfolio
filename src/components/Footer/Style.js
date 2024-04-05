@@ -13,4 +13,8 @@ export const Footer = styled.footer`
   color: white;
   font-weight: 300;
   font-family: "Roboto Condensed", sans-serif;
+
+  @media (min-width: 320px) and (max-width: 768px) {
+    font-size: 1.3rem;
+  }
 `;

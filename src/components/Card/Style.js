@@ -52,4 +52,7 @@ export const Btn = styled.button`
   &:hover {
     background: linear-gradient(#bc80ea, #dfbdfa);
   }
+  * {
+    color: #524f81;
+  }
 `;

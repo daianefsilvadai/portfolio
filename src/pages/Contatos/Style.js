@@ -13,6 +13,9 @@ export const Section = styled.section`
   h2 {
     color: #16213e;
   }
+  p {
+    font-size: 1.2rem;
+  }
   @media (min-width: 320px) and (max-width: 768px) {
     height: 90vh;
     padding-top: 20vh;

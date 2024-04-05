@@ -11,10 +11,7 @@ export const Section = styled.section`
   //Responsividade mobile
   @media (min-width: 320px) and (max-width: 768px) {
     flex-direction: column;
-    /* min-height: 90vh; */
   }
-
-  //Responsividade web
 `;
 
 export const Div = styled.div``;
@@ -66,6 +63,7 @@ export const Btn = styled.button`
   }
   * {
     text-decoration: none;
+    color: #524f81;
   }
 
   @media (min-width: 320px) and (max-width: 768px) {

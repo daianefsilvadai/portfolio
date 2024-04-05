@@ -5,12 +5,14 @@ export const Section = styled.section`
   background-color: #f5e7f5;
 
   h2 {
+    margin-top: 2rem;
+    font-size: 2rem;
     text-align: center;
     color: #16213e;
   }
 
   @media (min-width: 320px) and (max-width: 768px) {
-    padding-top: 12rem;
+    margin-top: 6rem;
     font-size: 1.5rem;
   }
 `;

@@ -11,17 +11,13 @@ export default function Sobre() {
       <S.DivBio>
         <S.ImgFoto src={foto} alt="Foto do rosto da dev" />
         <S.DivText>
-          <h2>Sobre</h2>
           <p>
-            <span>Sou Daiane Morais</span>
-          </p>
-          <p>
-            <strong>Dev Front-end </strong>
-          </p>
-
-          <p>
-            Atualmente, estou dedicando meu tempo e energia ao aprimoramento das
-            minhas habilidades como desenvolvedora Front-end.
+            <span>Sou Daiane Morais, </span>
+            uma desenvolvedora front-end apaixonada por criar interfaces web
+            envolventes e acessíveis. Com experiência em tecnologias como HTML,
+            CSS, React, e JavaScript, estou constantemente buscando aprender e
+            aplicar as melhores práticas de desenvolvimento web para entregar
+            produtos de alta qualidade.
           </p>
         </S.DivText>
       </S.DivBio>

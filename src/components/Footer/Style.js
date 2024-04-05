@@ -4,7 +4,7 @@ export const Footer = styled.footer`
   width: 100%;
   height: 50px;
   background-color: #524f81;
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,6 +15,6 @@ export const Footer = styled.footer`
   font-family: "Roboto Condensed", sans-serif;
 
   @media (min-width: 320px) and (max-width: 768px) {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 `;

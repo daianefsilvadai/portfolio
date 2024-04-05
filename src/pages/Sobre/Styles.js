@@ -9,9 +9,10 @@ export const Section = styled.section`
   flex-direction: column;
   padding-block: 30px;
   background-color: #f5e7f5;
+
   //mobile
   @media (min-width: 320px) and (max-width: 768px) {
-    padding-top: 9rem;
+    margin-top: 9rem;
   }
 `;
 
@@ -24,7 +25,6 @@ export const DivBio = styled.div`
 
   @media (min-width: 320px) and (max-width: 768px) {
     flex-direction: column;
-    /* padding-inline: 10px; */
     gap: 0.3rem;
   }
 `;
@@ -36,26 +36,22 @@ export const ImgFoto = styled.img`
 
   @media (min-width: 320px) and (max-width: 768px) {
     height: 30vh;
-    width: 35vw;
+    width: 45vw;
   }
 `;
 
 export const DivText = styled.div`
-  height: 47vh;
+  height: 40vh;
   width: 40%;
   text-align: left;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  font-size: 1.2rem;
 
-  h2,
   p {
     margin-bottom: 0.7rem;
     color: #16213e;
-  }
-
-  P {
-    color: black;
   }
 
   span {
@@ -63,14 +59,12 @@ export const DivText = styled.div`
     font-weight: bold;
   }
 
-  strong {
-    color: #16213e;
-    font-weight: bold;
-  }
-
   @media (min-width: 320px) and (max-width: 768px) {
+    justify-content: space-evenly;
+    width: 80vw;
+    margin-top: 1rem;
     p {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
     }
   }
 `;
@@ -85,14 +79,25 @@ export const DivTechs = styled.div`
   h3 {
     margin-bottom: 1rem;
   }
+
+  @media (min-width: 320px) and (max-width: 768px) {
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 3rem;
+    }
+  }
 `;
 
 export const DivIcons = styled.div`
   width: 50%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 
   img {
     width: 40px;
+  }
+
+  @media (min-width: 320px) and (max-width: 768px) {
+    width: 70%;
   }
 `;
